@@ -34,10 +34,8 @@ public class StatsService {
     }
 
     public int calculateAvg(int[] sales) {
-        int sum = 0;
-        for (int sale : sales) {
-            sum = sum + sale;
-        }
+        int sum = calculateSum(sales);
+
         return sum / sales.length;
     }
 
